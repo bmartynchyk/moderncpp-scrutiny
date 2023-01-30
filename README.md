@@ -1,2 +1,2 @@
 # moderncpp-scrutiny
-Studying modern cpp
+Studying modern cpp standards by solving different problems.
