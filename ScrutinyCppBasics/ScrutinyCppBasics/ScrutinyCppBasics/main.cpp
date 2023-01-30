@@ -29,18 +29,15 @@ namespace space1 {
 	vector<string> vec_s;
 
 	class A {
-		A() {
-			//   1.1 'SIZE' accessible in class 'A' and so on (structs)
-		}
+		A();
+
 	};
 
 	A::A()
 	{
+		// 1.1 'SIZE' accessible in class 'A' and so on(structs)
 	}
 
-	A::~A()
-	{
-	}
 }
 
 int main() {
