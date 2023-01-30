@@ -78,9 +78,9 @@ class problem2 {
 				pq.pop();
 			}
 
-			//if (k == pq.size()) {
-			//	max_score = max(max_score, static_cast<uint64_t>(sum*pair.second));
-			//}
+			if (k == pq.size()) {
+				max_score = max(max_score, static_cast<uint64_t>(sum*pair.second));
+			}
 		}
 		
 		return max_score;
