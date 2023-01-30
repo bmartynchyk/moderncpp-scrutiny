@@ -35,8 +35,5 @@
     <ClInclude Include="namespaces.h">
       <Filter>Resource Files\namespaces</Filter>
     </ClInclude>
-    <ClInclude Include="VariablesInitialization.h">
-      <Filter>Resource Files\Initialization</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
