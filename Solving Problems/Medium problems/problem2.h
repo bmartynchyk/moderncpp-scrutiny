@@ -16,8 +16,6 @@ Return the maximum possible score.
 
 A subsequence of indices of an array is a set that can be derived from the set {0, 1, ..., n-1} by deleting some or no elements.
 
- 
-
 Example 1:
 
 Input: nums1 = [1,3,3,2], nums2 = [2,1,3,4], k = 3
@@ -159,5 +157,4 @@ public:
         return max_score;
     }
 };
-* 
 */
