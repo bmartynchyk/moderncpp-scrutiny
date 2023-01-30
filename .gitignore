@@ -1,23 +1,50 @@
-# Binaries
+### [Binaries]:
 *.dll
-*.exe
 *.pdb
 
-# Object files
+### [Object files]:
 *.o
 *.obj
 
-# Debugging files
+### [Debugging files]:
+#	*.suo: The solution user options file contains information specific to the development environment and user, 
+# such as the most recently opened projects and solution explorer settings.
 *.suo
 
-# Visual Studio files
+### [Visual Studio files]:
+# 	The .vs/ directory contains metadata and settings for Visual Studio, including the user's IntelliSense 
+# database, project settings, and source control bindings.
 .vs/
-*.vcxproj
-*.vcxproj.filters
-*.sln
 
-# C++ build output
+#	The *.tlog/ directories contain intermediate build logs, which are not necessary for building or debugging 
+# the code.
+*.tlog/: 
+
+#	*.sdf: The database file for the IntelliSense database, which is used to store information about the project for 
+# faster code navigation and IntelliSense suggestions.
+*.sdf
+
+#	*.user: Files containing user-specific configuration and settings, such as the target platform and build configuration.
+*.user
+
+#	*.vcxproj is the project VS C++ file. It contains all the information that Visual Studio needs to build and run the 
+# project, including references to source code files, project settings, build configurations, and other related information.
+#*.vcxproj
+
+#	is known as a filters file. It is used to organize the source code files in the project into different categories, such 
+# as header files, source files, resources, etc.
+#*.vcxproj.filters
+
+#*.sln
+
+### [C++ build output]:
 bin/
 build/
+
+#	Debug/ or Release/: The build configurations directories, which contain the build outputs for each build configuration.
 Debug/
 Release/
+
+#	x64/ or x86/: The platform-specific directories, which contain the build outputs for each platform.
+x64/
+x86/
