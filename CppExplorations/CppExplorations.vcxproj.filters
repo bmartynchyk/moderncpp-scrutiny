@@ -24,6 +24,9 @@
     <ClCompile Include="Virtual Method Tables\virtual-explore.cpp">
       <Filter>Resource Files\Virtual Method Tables</Filter>
     </ClCompile>
+    <ClCompile Include="Order of Constructor Calls\constructor-calls-explore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Virtual Method Tables\virtual-explore.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Virtual Method Tables\virtual-classes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Order of Constructor Calls\constructor-calls-explore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
