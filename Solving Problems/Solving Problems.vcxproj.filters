@@ -35,5 +35,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
+    <None Include="Readme-list.md" />
   </ItemGroup>
 </Project>

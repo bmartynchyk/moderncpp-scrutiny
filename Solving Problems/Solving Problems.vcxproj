@@ -149,6 +149,7 @@
     <ClInclude Include="subroutines.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Readme-list.md" />
     <None Include="Readme.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
