@@ -18,15 +18,21 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="singleton.cpp">
+    <ClCompile Include="Creational Design Patterns\singleton.cpp">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Creational Design Patterns\fabric-method.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="allpatterns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="singleton.h">
+    <ClInclude Include="Creational Design Patterns\singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Creational Design Patterns\fabric-method.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -140,12 +140,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Creational Design Patterns\fabric-method.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="singleton.cpp" />
+    <ClCompile Include="Creational Design Patterns\singleton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="allpatterns.h" />
-    <ClInclude Include="singleton.h" />
+    <ClInclude Include="Creational Design Patterns\fabric-method.h" />
+    <ClInclude Include="Creational Design Patterns\singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
