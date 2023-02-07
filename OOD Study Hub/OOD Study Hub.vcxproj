@@ -143,11 +143,14 @@
     <ClCompile Include="Creational Design Patterns\fabric-method.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Creational Design Patterns\singleton.cpp" />
+    <ClCompile Include="SOLID\adjustment-code-to-SOLID.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="allpatterns.h" />
     <ClInclude Include="Creational Design Patterns\fabric-method.h" />
     <ClInclude Include="Creational Design Patterns\singleton.h" />
+    <ClInclude Include="solid.h" />
+    <ClInclude Include="SOLID\adjustment-code-to-SOLID.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,6 +24,9 @@
     <ClCompile Include="Creational Design Patterns\fabric-method.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SOLID\adjustment-code-to-SOLID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="allpatterns.h">
@@ -33,6 +36,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Creational Design Patterns\fabric-method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SOLID\adjustment-code-to-SOLID.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

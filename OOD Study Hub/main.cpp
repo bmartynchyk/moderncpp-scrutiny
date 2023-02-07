@@ -1,6 +1,6 @@
 #include <iostream>
 #include "allpatterns.h"
-
+#include "solid.h"
 
 //class Bs {
 //public:
