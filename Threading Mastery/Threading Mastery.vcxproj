@@ -128,10 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Threads basics\methods-in-thread.cpp" />
+    <ClCompile Include="Threads basics\mutex-basics.cpp" />
+    <ClCompile Include="Threads basics\overloaded-functions.cpp" />
     <ClCompile Include="Threads basics\thread-basics.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all-thread-mastering.h" />
+    <ClInclude Include="Threads basics\methods-in-thread.h" />
+    <ClInclude Include="Threads basics\mutex-basics.h" />
+    <ClInclude Include="Threads basics\overloaded-functions.h" />
     <ClInclude Include="Threads basics\threads-basic.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

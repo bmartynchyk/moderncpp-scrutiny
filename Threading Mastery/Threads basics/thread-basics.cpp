@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 void SomeWork(int num, int delay) {
 	//cout << "Thread id: " << this_thread::get_id() << "; Task: SomeWork();" << endl;
 
@@ -21,9 +22,6 @@ void threads_basics_test() {
 
 	thread th2(SomeWork, 4, 2000);
 
-	
-
-
 	for (int i = 0; i < 10; i++) {
 		// (3) Stop current thread for some time.
 		this_thread::sleep_for(chrono::milliseconds(1500));
@@ -31,7 +29,6 @@ void threads_basics_test() {
 		// (4) Get identifier of thread.
 		cout << "Thread id: " << this_thread::get_id() << "; Task: main();" << endl;
 	}
-	//SomeWork();
 
 	th1.join();
 	th2.join();

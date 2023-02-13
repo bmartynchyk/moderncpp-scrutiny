@@ -21,12 +21,30 @@
     <ClCompile Include="Threads basics\thread-basics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Threads basics\overloaded-functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Threads basics\methods-in-thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Threads basics\mutex-basics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all-thread-mastering.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Threads basics\threads-basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Threads basics\overloaded-functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Threads basics\methods-in-thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Threads basics\mutex-basics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
