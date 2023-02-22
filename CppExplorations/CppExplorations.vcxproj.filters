@@ -27,6 +27,12 @@
     <ClCompile Include="Order of Constructor Calls\constructor-calls-explore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Cast Operators\static_cast-explore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cast Operators\casts-explore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Virtual Method Tables\virtual-explore.h">
@@ -39,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Order of Constructor Calls\constructor-calls-explore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cast Operators\casts-explore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
