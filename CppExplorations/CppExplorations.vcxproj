@@ -143,12 +143,14 @@
     <ClCompile Include="Cast Operators\static_cast-explore.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Order of Constructor Calls\constructor-calls-explore.cpp" />
+    <ClCompile Include="Raw Pointers\raw-pointers.cpp" />
     <ClCompile Include="Virtual Method Tables\virtual-explore.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all-explorations.h" />
     <ClInclude Include="Cast Operators\casts-explore.h" />
     <ClInclude Include="Order of Constructor Calls\constructor-calls-explore.h" />
+    <ClInclude Include="Raw Pointers\raw-pointers.h" />
     <ClInclude Include="Virtual Method Tables\virtual-classes.h" />
     <ClInclude Include="Virtual Method Tables\virtual-explore.h" />
   </ItemGroup>

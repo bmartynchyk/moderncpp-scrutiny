@@ -73,8 +73,6 @@ void static_cast_operator() {
 	//x5 += 1;
 
 	////////////////////////////////////////////////////////////////////////////////
-
-
 	int x = 10; // x - lvalue, 10 - rvalue
 	int& y = x;  // y - lvalue, x - lvalue
 	int z = x + y; // z - lvalue, x - lvalue, y - lvalue, (x + y) - rvalue
@@ -90,9 +88,9 @@ void static_cast_operator() {
 	class A
 	{
 	public:
-		A();         //Обычный конструктор
-		A(const A&); //Конструктор копирования
-		A(A&&);      //Конструктор перемещения
+		A();
+		A(const A&);
+		A(A&&);
 	};
 
 	cout << sizeof(A) << endl;
