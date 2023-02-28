@@ -1,8 +1,10 @@
 #include "raw-pointers.h"
 
-
-
 using namespace std;
+
+
+void f() { cout << "fuc f\n"; }
+
 
 void raw_pointers_explore() {	////////////////////////////////////////////////////////////////////////////////
 	// Case #1. Declaration of pointer.
@@ -20,20 +22,20 @@ void raw_pointers_explore() {	//////////////////////////////////////////////////
 	{
 		float a = 465;
 		float b = 20;
-		float* p1 = &a;
+		float* p1 = &a; // State 1.
 
-		cout << "&p1: [" << &p1 << "]; p1: [" << p1 
+		cout << "State #1\n&p1: [" << &p1 << "]; p1: [" << p1 
 			<< "];\n&a1: [" << &a << "]; a1: [" << a  << "];\n";
 
-		p1 = &b; // Changing the address pointed to by the pointer.
+		p1 = &b; // State 2 - changing the address pointed to by the pointer.
 
-		cout << "\n&p1: [" << &p1 << "]; p1: [" << p1 << "]; *p1: [" << *p1 
+		cout << "State #2\n&p1: [" << &p1 << "]; p1: [" << p1 << "]; *p1: [" << *p1 
 			<< "];\n &b: [" << &b << "];  b: [" << b << "];\n";
 	}
 
 
 	////////////////////////////////////////////////////////////////////////////////
-	// Case #3. Const context while call operator* ().
+	// Case #3. Constant context while call operator* ().
 	{
 		struct Rectangle {
 			int a;
@@ -138,6 +140,13 @@ void raw_pointers_explore() {	//////////////////////////////////////////////////
 		
 		for (int i = 0; i < 5; i++)
 			cout << "\np[" << i << "] = " << p[i] << "; arr[" << i << "] = " << arr[i];
+	}
+
+	////////////////////////////////////////////////////////////////////////////////
+	// Case #7. Raw-pointer with arrays.
+	{
+		auto p = f;
+		p();
 	}
 
 }
