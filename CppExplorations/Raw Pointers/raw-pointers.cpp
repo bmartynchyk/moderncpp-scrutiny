@@ -6,8 +6,9 @@ using namespace std;
 void f() { cout << "fuc f\n"; }
 
 
-void raw_pointers_explore() {	////////////////////////////////////////////////////////////////////////////////
-	// Case #1. Declaration of pointer.
+void raw_pointers_explore() {
+	////////////////////////////////////////////////////////////////////////////////
+	// Case #1. Declaration of raw pointer.
 	{
 		int a; // Contains random value.
 		float* p; // Contains random address.
@@ -15,13 +16,30 @@ void raw_pointers_explore() {	//////////////////////////////////////////////////
 		char* chptr1, chptr2;
 		// chptr1 - pointer on char type.
 		// chptr2 - char type - because* refers to a variable name, not a type.
+
+		double val1 = 200;
+		double* p1 = &val1;
+		double** p2 = &p1; // Pointer on pointer.
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
-	// Case #2. Operation & and * with pointer.
+	// Case #2. &,* operation with raw pointer.
 	{
-		float a = 465;
 		float b = 20;
+		float a = 465;
+		float* p = &a;
+
+		cout << "&a = " << &a << endl;
+		cout << "&p: [" << &p << "]; p: [" << p << "];\n";
+
+
+		//float a = 465;
+		//float* p = &a;
+		cout << "*p = " << *p << endl;
+
+
+
+		// Changing state on runtime.
 		float* p1 = &a; // State 1.
 
 		cout << "State #1\n&p1: [" << &p1 << "]; p1: [" << p1 
@@ -31,6 +49,21 @@ void raw_pointers_explore() {	//////////////////////////////////////////////////
 
 		cout << "State #2\n&p1: [" << &p1 << "]; p1: [" << p1 << "]; *p1: [" << *p1 
 			<< "];\n &b: [" << &b << "];  b: [" << b << "];\n";
+	}
+
+
+	{
+		int arr[12];
+
+		int* const ptr = arr;
+		int* p;
+		//p = &arr;
+		p = arr;
+		p = &arr[0];
+
+		for (int i = 0; i < 12; i++) {
+			cout << arr[i] << endl;
+		}
 	}
 
 
@@ -73,10 +106,16 @@ void raw_pointers_explore() {	//////////////////////////////////////////////////
 	{
 		double val1 = 20;
 		double val2 = 30;
-		double const* p0 = &val1; // Constantness for type.
-		const double* p1 = &val1; // Constantness for type.
-		double* const p2 = &val2; // Constantness for pointer.
-		double const* const p3 = &val2; // Constantness both for type and pointer.
+
+		// Constantness for type.
+		double const* p0 = &val1; 
+		const double* p1 = &val1;
+
+		// Constantness for pointer.
+		double* const p2 = &val2;
+
+		// Constantness both for type and pointer.
+		double const* const p3 = &val2; 
 
 		// *p1 = 500; // Error - broken constant behavior. Impossible to modify.
 		cout << "\n\n&p1:   [" << &p1 << "]; p1:   [" << p1 << "]; *p1:  [" << *p1 
@@ -122,8 +161,8 @@ void raw_pointers_explore() {	//////////////////////////////////////////////////
 		int const* p1 = &b;
 		int const** pp1 = &p1;
 		const int c = 30;
-		int const* const p2 = &c;               // Const pointer on const type.
-		int const* const* pp2 = &p2;            // Pointer on const pointer on const type.
+		int const* const p2 = &c; // Const pointer on const type.
+		int const* const* pp2 = &p2; // Pointer on const pointer on const type.
 		int const* const* const pp3 = &p2; // Const pointer on const pointer on const type.
 	}
 
