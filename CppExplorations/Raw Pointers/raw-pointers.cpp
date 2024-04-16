@@ -5,6 +5,25 @@ using namespace std;
 
 void f() { cout << "fuc f\n"; }
 
+int* funcAddr(int arr[]) {
+	int* ptr = arr + 2;
+
+	int arr2[121];
+	int arr1[123];
+	int arr3[]{ 1 };
+	void (*ptr_f)() = nullptr;
+
+	cout << typeid(arr).name() << endl;
+	cout << typeid(arr1).name() << endl;
+	cout << typeid(arr2).name() << endl;
+	cout << typeid(arr3).name() << endl;
+	cout << typeid(f).name() << endl;
+	cout << typeid(ptr_f).name() << endl;
+
+	cout << "\ninside the func:\n&ptr: " << &ptr << "; ptr: " << ptr << "; *ptr: " << *ptr;
+
+	return ptr;
+}
 
 void raw_pointers_explore() {
 	////////////////////////////////////////////////////////////////////////////////
@@ -51,21 +70,69 @@ void raw_pointers_explore() {
 			<< "];\n &b: [" << &b << "];  b: [" << b << "];\n";
 	}
 
-
+	////////////////////////////////////////////////////////////////////////////////
+	// Case #3. Raw pointers on array.
 	{
+		int a = 10;
+		const int* pa = &a;
+		
+		const int b = 20;
+		int const* pb = &b;
+
+		//const int c = 30;
+		//int* pc = &c; // Error
+
+		int d = 40;
+		int* const pd = &d;
+
+	}
+
+	////////////////////////////////////////////////////////////////////////////////
+	// Case #3. Raw pointers on array.
+	{
+		int a1[4];
+		int const a2[3] = { 1, 2, 3 }; // Should be initialized at once.
+		
+		// int* p0 = a2; - Error
+		int const* p1 = a2;
+
+		p1 = a1;
+
+
+
+
+
 		int arr[12];
 
 		int* const ptr = arr;
-		int* p;
-		//p = &arr;
-		p = arr;
-		p = &arr[0];
 
 		for (int i = 0; i < 12; i++) {
 			cout << arr[i] << endl;
 		}
 	}
 
+	// void
+	{
+		int g = 13;
+		void* ptr = &g;
+
+		// double* p1 = static_cast<double*>(&g); - invalid type conversion
+		double* p2 = static_cast<double*>(ptr);
+		int* p3 = static_cast<int*>(ptr);
+
+		cout << "(double) *p2 =  " << *p2 << endl;
+		cout << "(int) *p3: " << *p3 << endl;
+
+
+	}
+
+	{
+		int arr[5] = { 1, 2, 3, 4, 5 };
+
+		int* ptr = funcAddr(arr);
+
+		cout << "\noutside the func:\n&ptr: " << &ptr << "; ptr: " << ptr << "; *ptr: " << *ptr << endl;
+	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	// Case #3. Constant context while call operator* ().
